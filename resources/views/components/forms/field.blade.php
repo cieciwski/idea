@@ -1,13 +1,28 @@
-@props(['label', 'name', 'type' => 'text'])
+@props(['label' => false, 'name', 'type' => 'text', 'value' =>''])
 
-<div>
-    <label for="{{ $name }}" class="label">{{ $label }}</label>
-    <input
-        type="{{ $type }}"
-        id="{{ $name }}"
-        name="{{ $name }}"
-        value="{{ old($name) }}"
-        {{ $attributes->merge(['class' => 'input']) }}
-    >
-    <x-error :name="$name" />
+<div class="space-y-2">
+    @if ($label)
+        <label for="{{ $name }}" class="label">{{ $label }}</label>
+    @endif
+
+    @if ($type === 'textarea')
+        <textarea
+            name="{{ $name }}"
+            id="{{ $name }}"
+            class="textarea"
+            {{ $attributes }}
+        >{{ old($name, $value) }}</textarea>
+    @else
+
+        <input
+            type="{{ $type }}"
+            id="{{ $name }}"
+            name="{{ $name }}"
+            class="input"
+            value="{{ old($name, $value) }}"
+            {{ $attributes }}>
+
+    @endif
+
+    <x-forms.error name="{{ $name }}"/>
 </div>

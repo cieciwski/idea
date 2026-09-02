@@ -1,0 +1,13 @@
+[90m= [39m[34;4mApp\Models\Idea[39;24m {#7616
+    [34mstatus[39m: [34;4mApp\IdeaStatus[39;24m {#7615
+      +[1mname[22m: [32m"[39m[32mPENDING[39m[32m"[39m,
+      +[1mvalue[22m: [32m"[39m[32mpending[39m[32m"[39m,
+    },
+    [34muser_id[39m: [35m1[39m,
+    [34mtitle[39m: [32m"[39m[32mDolor modi corporis sint dicta.[39m[32m"[39m,
+    [34mdescription[39m: [32m"[39m[32mEum quasi sequi amet culpa et. Et recusandae dignissimos eveniet voluptatem porro libero dolorem. Autem maiores voluptatem et accusamus. Rerum ipsa sapiente voluptatibus quia repellat quam.[39m[32m"[39m,
+    [34mlinks[39m: [32m"[39m[32m[[39m\"[32mhttp:[39m\\[32m/[39m\\[32m/murphy.biz[39m\\[32m/earum-voluptates-dolorem-odio-autem-tenetur-voluptatem-non[39m\"[32m][39m[32m"[39m,
+    [34mupdated_at[39m: [32m"[39m[32m2026-08-27 13:39:18[39m[32m"[39m,
+    [34mcreated_at[39m: [32m"[39m[32m2026-08-27 13:39:18[39m[32m"[39m,
+    [34mid[39m: [35m4[39m,
+  }

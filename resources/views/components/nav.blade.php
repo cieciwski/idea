@@ -1,4 +1,5 @@
 <nav class="border-b border-border">
+
     <div class="max-w-5xl mx-auto h-16 px-4 flex items-center justify-between">
         <a href="/">
             <span class="font-bold text-xl">Idea</span>
@@ -11,6 +12,7 @@
             @endguest
 
             @auth
+                <a href="{{ route('profile.edit') }}">Edit Profile</a>
                 <form action="/logout" method="POST">
                     @csrf
                     <button class="btn btn-ghost">Log Out</button>
